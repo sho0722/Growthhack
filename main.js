@@ -19,4 +19,3 @@ $("#D").click(function(){
 $("#E").click(function(){
     $("#Empathy").fadeIn(1500);
 });
-
