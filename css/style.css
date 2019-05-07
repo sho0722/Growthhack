@@ -1,0 +1,655 @@
+body {
+    background-image: url(../img/texture.jpg);
+    background-attachment: fixed;
+}
+
+/* ここからヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #33FFCC;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 70px;
+    margin: 10px 0 10px 40px;
+}
+
+header span {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+header .link {
+    display: flex;
+    align-items: flex-end;
+}
+
+.link a {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+/* ここからトップ画面 */
+.top {
+    height: 300px;
+    padding: 0 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+    padding: 30px 0;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.upper div {
+    font-size: 30px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    text-align: center;
+}
+
+.developing {
+    background-color: #FFCCFF;
+    animation: left 5.5s ease;
+}
+
+.growthhack {
+    background-color: #99FF00;
+    animation: down 5.5s ease-in;
+}
+
+.marketing {
+    background-color: #FFCC66;
+    animation: right 5.5s ease;
+}
+
+/* ここからアニメーション */
+@keyframes left {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+
+    100% {
+        left: 30%;
+        opacity: 0;
+    }
+}
+
+@keyframes down {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+
+    30% {
+        top: 0;
+        opacity: 0;
+    }
+
+    100% {
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+@keyframes right {
+    0% {
+        right: 0;
+        opacity: 1;
+    }
+
+    100% {
+        right: 30%;
+        opacity: 0;
+    }
+}
+
+/* ここから紹介 */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.content img {
+    height: 100%;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 25px;
+    margin-bottom: 30px;
+    text-indent: 1em;
+}
+
+.content li {
+    font-style: italic;
+    line-height: 25px;
+}
+
+.way-marketing {
+    margin-right: 120px;
+    padding: 15px 30px;
+    border: 5px solid #FF6600;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(230, 172, 122, 0.5);
+}
+
+.way-growthhack {
+    padding: 15px 30px;
+    border: 5px solid #33CC99;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(135, 228, 72, 0.678);
+}
+
+/* ここからフレームワーク */
+.flow {
+    position: relative;
+    top: 100px;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 300px solid rgba(241, 240, 226, 0.712)	;
+    margin-left: 100px;
+}
+.flow div {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.flow div:first-child {
+    top: -290px;
+    left: -180px;
+    border: 3px solid #0099FF;
+    color: #0099FF;
+    padding: 5px 100px;
+}
+
+.flow div:nth-child(2) {
+    top: -230px;
+    left: -150px;
+    border: 3px solid #00FFFF;
+    color: #00FFFF;
+    padding: 5px 80px;
+}
+
+.flow div:nth-child(3) {
+    top: -170px;
+    left: -130px;
+    border: 3px solid #99FF00;
+    color: #99FF00;
+    padding: 5px 60px;
+}
+
+.flow div:nth-child(4) {
+    top: -110px;
+    left: -100px;
+    border: 3px solid #FFCC66;
+    color: #FFCC66;
+    padding: 5px 40px;
+}
+
+.flow div:last-child {
+    top: -50px;
+    left: -85px;
+    border: 3px solid #FF3333;
+    color: #FF3333;
+    padding: 5px 20px;
+}
+
+/* ここから資質 */
+#qualities {
+    padding-top: 70px;
+}
+
+#qualities h2 {
+    line-height: 40px;
+}
+
+#qualities strong {
+    color: #008BBB;
+}
+
+.abcde {
+    position: relative;
+    width: 70%;
+    left: 5%;
+    display: flex;
+    margin-bottom:80px;
+    padding: 10px;
+    box-shadow: -4px 4px 5px 2px #008BBB;
+}
+
+.abcde:nth-child(3) {
+    left: 10%;
+}
+
+.abcde:nth-child(4) {
+    left: 15%;
+}
+
+.abcde:nth-child(5) {
+    left: 20%;
+}
+
+.abcde:nth-child(6) {
+    left: 25%;
+}
+
+.abcde button {
+    font-size: 100px;
+    font-family: 'Times New Roman',sans-serif;
+    margin-right: 70px;
+    color: #008BBB;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.abcde div {
+    display: none;
+}
+
+.abcde p {
+    text-indent: 0;
+}
+
+/* ここからスキル */
+#skill {
+    padding-top: 70px;
+}
+
+.triangle {
+    margin: 0 auto;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 300px solid rgba(92, 88, 84, 0.959)	;
+}
+
+.triangle div {
+    position: absolute;
+    width: 200px;
+    font-size: 35px;
+    border-radius: 50%;
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.triangle div:first-child {
+    left: -110px;
+    background-color: #FF6633;
+}
+
+
+.triangle div:nth-child(2) {
+    left: -110px;
+    top: 110px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.triangle div:nth-child(3) {
+    right: 90px;
+    top: 230px;
+    background-color: #0099CC;
+}
+
+.triangle div:last-child {
+    left: 90px;
+    top: 230px;
+    background-color: #228B22;
+}
+
+.skill {
+    margin-right: 40px;
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px 10px 0 10px;
+}
+
+.skill:first-child {
+    border: 4px solid #0099CC;
+    background-color: rgb(192, 240, 238);
+}
+
+.skill:nth-child(2) {   
+    border: 4px solid #FF6633;
+    background-color: rgb(233, 202, 162);
+}
+
+.skill:last-child {
+    border: 4px solid #228B22;
+    background-color: rgb(205, 230, 159);
+    margin-right: 0;
+}
+
+.skill h3 {
+    text-align: center;
+}
+
+.skill p {
+    text-indent: 0;
+    text-align: center;
+}
+
+/* ここからページリンク */
+.company {
+    padding: 100px 0;
+}
+
+.page-link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.page-link img {
+    height: 120px;
+}
+
+.page-link img:hover {
+    height: 130px;
+    box-shadow: 0 5px red;
+}
+
+/* ここからトップボタン */
+.top-page {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    transition: 0.5s;
+}
+
+.top-page:hover {
+    opacity: 0.5;
+}
+
+.top-page img {
+    height: 40px;
+    width: 40px;
+}
+
+/* ここからフッター */
+footer {
+    background-color: #CCFFCC;
+}
+
+footer img {
+    height: 40px;
+}
+
+footer span {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Marker Felt',sans-serif;
+    color: #0099FF;
+    padding-top: 20px; 
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center; 
+}
+
+footer a {
+    margin: 20px 3%;
+}
+
+/* ここから事例集 */
+.case {
+    padding: 30px 150px;
+}
+
+.case div {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.case p {
+    width: 100%;
+    text-indent: 1em;
+}
+
+.case div img {
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+#twitter a {
+    color: #00FFFF;
+}
+
+#dropbox a {
+    color:  #00008B;
+}
+
+#airbnb a {
+    color: #FF6347;
+}
+
+#cookpad a {
+    color: #DAA520;
+}
+
+#pinterest a {
+    color: #A52A2A;
+}
+
+#daito a {
+    color: red;
+}
+
+/* ここからレスポンシブ対応 */
+
+/* 1140px以下 */
+@media screen and (max-width: 1140px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        padding: 30px 60px;
+    }
+
+    .content img {
+        height: 300px;
+    }
+
+    .flow {
+        margin-left: 30px;
+    }
+
+    .way-marketing {
+        margin-right: 30px;
+        padding: 10px 25px;
+    }
+
+    .way-growthhack {
+        padding: 10px 25px;
+    }
+
+    .page-link img {
+        height: 100px;
+    }
+
+    .page-link img:hover {
+        height: 110px
+    }
+
+    .case {
+        padding: 30px 70px;
+    }
+}
+
+/* 768px以下 */
+@media screen and (max-width: 768px) {
+    header span {
+        font-size: 35px;
+    }
+
+    header img {
+        height: 45px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .upper div {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content img {
+        height: 250px;
+        width: 300px;
+    }
+
+    .content h3 {
+        text-align: center;
+    }
+
+    .way-marketing {
+        margin-right: 0;
+        margin-bottom: 100px;
+    }
+    
+    .flow {
+        display: none;
+    }
+
+    #qualities, #skill, .company {
+        padding-top: 30px; 
+    }
+
+    .triangle {
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 250px solid rgba(92, 88, 84, 0.959)	;
+    }   
+
+    .triangle div {
+        width: 120px;
+        font-size: 25px;
+    }
+    
+    .triangle div:first-child {
+        left: -60px;
+    }
+    
+    .triangle div:nth-child(2) {
+        left: -60px;
+        top: 100px;
+        line-height: 30px;
+    }
+    
+    .triangle div:nth-child(3) {
+        right: 110px;
+        top: 200px;
+    }
+    
+    .triangle div:last-child {
+        left: 110px;
+        top: 200px;
+    }
+
+    .skill {
+        margin-right: 0;
+        border-radius: 10px;
+        width: 100%;
+        padding: 5px 5px 0 5px;
+        margin-top: 30px;
+    }
+
+    .page-link img {
+        height: 80px;
+    }
+
+    .page-link img:hover {
+        height: 85px;
+        box-shadow: 0 2px red;
+    }
+
+    .case {
+        padding: 30px 40px;
+    }
+}
+
+/* 480px以下 */
+@media screen and (max-width: 480px) {
+    header span {
+        font-size: 25px;
+    }
+
+    header img {
+        height: 30px;
+    }
+
+    .content {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .abcde span {
+        font-size: 70px;
+        margin-right: 10px;
+    }
+
+    footer a {
+        margin: 15px 2%;
+    }    
+}
